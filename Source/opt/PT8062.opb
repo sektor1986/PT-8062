@@ -1,0 +1,27 @@
+-dt s,d,r,a
+-pl 60
+-pw 132
+-g
+-cwno
+-cpu MB96F675RA
+"E:\sektor\GIT_project\PT8062\Source\ABS\PT8062.abs"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\Start.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\Main.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\vectors.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\_ffmc16.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\utils.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\button.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\driver_update.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\lcd.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\smc.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\timer.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\icu.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\flash.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\adc.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\backlight.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\rtc.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\can.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\j1939.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\uart.obj"
+-a "E:\sektor\GIT_project\PT8062\Source\OBJ\mb96670_smc_zpd.obj"
+
