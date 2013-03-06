@@ -71,7 +71,6 @@ __interrupt void EI0_IRQ (void)
 		// Calculation of time period
 		value = abs(FRT0_ovl_cnt_new - FRT0_ovl_cnt_old) * 0x10000UL + ICU1_new - ICU1_old;
 
- 
 		ICU1_old = ICU1_new;                  // Save current ICU value as reference for next cycle
 		FRT0_ovl_cnt_old = FRT0_ovl_cnt_new;  // Save current FRT value as reference for next cycle
   		

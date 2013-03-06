@@ -47,7 +47,7 @@ float RPM = 0.0;
 unsigned char save_params_flag = 0;
 
 
-float I = 2.08;
+float I = 2.34;
 unsigned char NUM_K = 0;
 
 unsigned int timer_mode_empty = 0;
@@ -94,7 +94,6 @@ void DriverInit(void)
 	LoadAllParams();		// Чтение параметров из flash
 	RecalcVariables();
 	Timer_Start(TIMER_ID_MAIN, 20, TRUE, UpdateSMCLCD);	
-		
 }
 
 void RecalcVariables(void)
@@ -103,8 +102,7 @@ void RecalcVariables(void)
 	
 	TIME_OBNUL_FR = (unsigned long)50; 
 	MAX_FREQUENSY = ((float)MAX_TAH*I/ 10.0);
-	PASS_COUNTER_SPEED_IRQ = 2;
-	
+	PASS_COUNTER_SPEED_IRQ = 16;
 }
 
 void UpdateSMC(void)
@@ -140,7 +138,7 @@ void UpdateSMC(void)
 	// 1об/мин = 0,0733 * 512 = 37.545	
 	
 
-	temp_sms_inp = RPM * 37.545;
+	temp_sms_inp = RPM * 38.3;
 
 	if (temp_sms_inp > 125000)
 		temp_sms_inp = 125000;
@@ -216,12 +214,13 @@ void UpdateSMCLCD(void)
 void ButoonPress(unsigned char enState)
 {	
 	static uint8_t firstPress = 1;
-	
+	/*
 	if (firstPress)
 	{
 		firstPress = 0;
 		return;
 	}
+	*/
 	if (enState == 1)	           //short press
 	{
 		switch (m_enGuiMode)
@@ -294,7 +293,7 @@ void LoadAllParams(void)
 	//K = Load_K();
 	NUM_K = data[0];
 	if (NUM_K > 11)
-		NUM_K = 0;
+		NUM_K = 1;
 
 	if (ReadOk)
 		//Сохраняем значения

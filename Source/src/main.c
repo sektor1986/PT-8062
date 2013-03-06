@@ -184,9 +184,7 @@ void main(void)
 	#endif
 		
 	ClearPosSMC();
-	
-	DriverInit();
-	InitFRTimer0();
+		InitFRTimer0();
 	InitExtInt0(); //test
 
 	InitBacklight();
@@ -194,7 +192,7 @@ void main(void)
 	
 	if (Button_GetCurrentButtonState(BUTTON_ID_B1) == StateLow)
 	{
-		Timer_Wait(TIMER_ID_MAIN, 3000, TRUE);
+		Timer_Wait(TIMER_ID_MAIN, 500, TRUE);
 		if (Button_GetCurrentButtonState(BUTTON_ID_B1) == StateLow)
 		{
 			while (Button_GetCurrentButtonState(BUTTON_ID_B1) == StateLow)
@@ -203,6 +201,7 @@ void main(void)
 		}
 	}
 		
+		DriverInit();
     
     while(1)
     { 

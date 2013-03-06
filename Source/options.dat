@@ -39,7 +39,7 @@ $2
 -g
 -AL 2
 -ra _INRAM01=0x007200/0x007FFF
--ro _INROM01=0xFE0000/0xFFFFFF
+-ro _INROM01=0xFF0000/0xFFFFFF
 -ro _INROM02=0xDF2000/0xDF9FFF
 -sc CONST/Const/BYTE=0xFF8000
 -check_rora
@@ -56,7 +56,7 @@ $2
 $other
 -Xset_rora
 $time
-1357367784
+1361267681
 $end
 $3
 -dt s,d,r,a

@@ -15,16 +15,13 @@ Exec=1
 AutoLoad=1
 
 [DirInfo]
-WSP=E:\sektor\GIT_project\PT8062\Source\
+WSP=E:\sektor\GIT_project\PT-8062\Source\
 
 [EditState]
-STATE-1=Src\Main.c:200
-STATE-2=src\adc.c:38
-STATE-3=src\adc.h:5
-STATE-4=src\driver_update.c:143
-STATE-5=src\vectors.c:172
-STATE-6=src\mb96670_smc_zpd\mb96670_smc_zpd.c:1490
-STATE-7=src\button.c:133
-STATE-8=src\timer.c:173
-Count=8
+STATE-1=src\driver_update.c:115
+STATE-2=Src\Main.c:195
+STATE-3=src\timer.c:159
+STATE-4=src\timer.h:85
+STATE-5=src\icu.c:26
+Count=5
 
